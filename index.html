@@ -343,7 +343,7 @@ $("wishForm").addEventListener("submit",e=>{
   const clean=s=>s.replace(/<[^>]*>/g,"").replace(/https?:\/\/\S+/gi,"").replace(/\s+/g," ").trim();
   const n=clean($("gname").value),m=clean($("gmsg").value);
   if(n.length<2||m.length<3){st.textContent="Please enter your name and a short message.";return;}
-  const text=`Wishes for Mahmoud & Nada 💛\n${m}\n— ${n}`;
+  const text=`Wishes for Mahmoud & Nada ❤\n${m}\n— ${n}`;
   const url="https://wa.me/"+CONFIG.whatsappNumber+"?text="+encodeURIComponent(text);
   window.open(url,"_blank","noopener");
   st.textContent="Thank you! Press send in WhatsApp to deliver your wish.";
